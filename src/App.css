@@ -1,0 +1,160 @@
+@import "tailwindcss";
+.container {
+  display: flex;
+  flex-direction: row;
+  min-width: 100vw;
+  gap: 2rem;
+  padding: 2rem;
+  /* background: linear-gradient(to right, #e0f7fa, #f1f8ff); */
+  /* @apply bg-white dark:bg-gray-900 rounded-xl shadow-md; */
+  min-height: max-content;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+svg {
+  touch-action: none;
+}
+
+/* Make the layout stack vertically on mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding-top : 0.7rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .inputSection,
+  .graphSection {
+    width: 96%;
+    margin: 0 auto;
+  }
+
+  .graphSection {
+    padding: 0.2rem;
+  }
+
+  .inputSection textarea {
+    height: 140px;
+    font-size: 0.95rem;
+  }
+}
+
+
+
+.inputSection { 
+  flex: 1;
+  background: rgb(234, 231, 231);
+  padding: 2rem!important;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.inputSection h1 {
+  color: #0d47a1;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.inputSection h3 {
+  color: #01579b;
+  margin-bottom: 0.5rem;
+}
+
+.inputSection ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.inputSection textarea {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 90%;
+  resize: none;
+  background-color: #e0f2f1;
+  color: #01453a;
+  
+}
+
+.graphSection {
+  flex: 2;
+
+  /* padding: 1rem; */
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 100%;
+  overflow: hidden;
+}
+
+
+/* Style for Source Input Section */
+.sourceInput {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.sourceInput label {
+  font-weight: 600;
+  color: #0d47a1;
+  font-size: 1rem;
+}
+
+.sourceInput input {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #e3f2fd;
+  color: #0d47a1;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.sourceInput input:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 5px rgba(25, 118, 210, 0.4);
+}
+
+/* Button Styles */
+.algorithm-visualization {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.algorithm-visualization button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.algorithm-visualization button:hover {
+  background-color: #0d47a1;
+}
+
+.algorithm-visualization button:disabled {
+  background-color: #b0bec5;
+  cursor: not-allowed;
+}
