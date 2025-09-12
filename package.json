@@ -1,9 +1,9 @@
 {
+  "homepage": "https://kushalyadav2.github.io/Graph_Visualizer",
   "name": "graph-visualizer",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://niravpokiya.github.io/Network-graph-visualizer",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
