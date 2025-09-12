@@ -24,7 +24,8 @@ Interactive, responsive, and theme-aware **Graph Visualizer** built with **React
 
 ## 🧪 Demo
 
-[🔗 Live GitHub Page](https://niravpokiya.github.io/Network-graph-visualizer)
+
+[🔗 Live GitHub Page](https://github.com/kushalyadav2/Graph_Visualizer)
 
 ---
 
@@ -35,7 +36,7 @@ Interactive, responsive, and theme-aware **Graph Visualizer** built with **React
 git clone https://github.com/niravpokiya/Network-graph-visualizer.git
 
 # Navigate to project
-cd Network-graph-visualizer
+cd Graph_Visualizer
 
 # Install dependencies
 npm install
