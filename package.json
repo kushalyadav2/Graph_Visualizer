@@ -1,6 +1,6 @@
 {
-  "homepage": "https://kushalyadav2.github.io/Graph_Visualizer",
   "name": "graph-visualizer",
+  "homepage": "https://kushalyadav2.github.io/Graph_Visualizer",
   "private": true,
   "version": "0.0.0",
   "type": "module",
